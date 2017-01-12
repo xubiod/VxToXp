@@ -35,7 +35,7 @@ namespace VXToXP {
                             g.DrawImage(tmp, new Rectangle(width, 0, width * 3, height * 4), new Rectangle(0, 0, width * 3, height * 4), GraphicsUnit.Pixel);
                             g.Flush();
                         }
-                        newimage.Save(Path.Combine(outpath, file.Name));
+                        newimage.Save(Path.Combine(outpath, file.Name), ImageFormat.Png);
                         Console.WriteLine(String.Format("Processed {0}.", file.Name));
                     }
                 }
